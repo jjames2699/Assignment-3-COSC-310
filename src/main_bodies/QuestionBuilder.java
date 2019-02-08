@@ -1,63 +1,62 @@
-package main_bodies;
+package src.main_bodies;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 
 public class QuestionBuilder {
-	private Scanner fileIn;
-	private File file;
+	private File dir;
+	private ArrayList<Question> builtQuestions;
 	
-	QuestionBuilder(String filename){
-		this.file = new File(filename);
-		
-		try {
-			fileIn = new Scanner(file);
-			
-			
-		} catch(FileNotFoundException ex) {
-			ex.printStackTrace();
-		}
-		
+	QuestionBuilder(String folderName) {
+		this.dir = new File(folderName);
+		this.builtQuestions = new ArrayList<>();
 	}
 	
-	public Question buildQuestion() {
-		Question q = new Question();
-		String tempQuestion = "";
+	public ArrayList<Question> getBuiltQuestions() {return this.builtQuestions;}
+	
+	public void buildQuestions() {		
+		Question temp;
+		String tempLine;
 		
-		fileIn.next();
-		while(fileIn.hasNextInt()) {
-			q.addBranch(fileIn.nextInt());
+		for(File file: this.dir.listFiles()) {
+			try {
+				Scanner s = new Scanner(file);
+				temp = new Question();
+				
+				//Read BranchIDs
+				tempLine = s.nextLine();
+				for(int i=0; i<tempLine.length(); i++) {
+					temp.addBranch(Character.getNumericValue(tempLine.charAt(i)));
+				}
+				
+				//Read Question Priority
+				tempLine = s.nextLine();
+				temp.setQuestionPriority(Integer.parseInt(tempLine));
+				
+				//Read Question
+				temp.setQuestion(s.nextLine());
+				
+				//Read inputRange
+				tempLine = s.nextLine();
+				temp.setInputRange(Integer.parseInt(tempLine));
+				
+				//Read Answers
+				while(s.hasNextLine()) {
+					temp.addAnswer(s.nextLine());
+				}
+				
+				builtQuestions.add(temp);
+				temp = null;
+				
+				s.close();	
+			} catch(FileNotFoundException ex) {
+				ex.printStackTrace();
+			}
 		}
-		
-		fileIn.nextLine();
-		
-		fileIn.next();
-		q.setQuestionPriority(fileIn.nextInt());
-		
-		fileIn.nextLine();
-		
-		fileIn.next();
-		while(fileIn.hasNext()) {
-			tempQuestion += fileIn.next();
-		}
-		
-		q.setQuestion(tempQuestion);
-		
-		fileIn.nextLine();
-		
-		fileIn.next();
-		q.setInputRange(fileIn.nextInt());
-		
-		for(int i=0; i<q.getInputRange(); i++) {
-			q.addAnswer(fileIn.nextLine());
-		}
-		
-		return q;
 	}
 	
-	public void closeScanner() {
-		this.fileIn.close();
-	}
+
 
 }

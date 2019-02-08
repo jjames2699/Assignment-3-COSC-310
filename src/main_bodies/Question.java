@@ -1,3 +1,5 @@
+package src.main_bodies;
+
 import java.util.ArrayList;
 
 public class Question {
@@ -53,14 +55,12 @@ public class Question {
 	public void setEnd() {this.children = null;}
 	
 	//Class Methods
-	public void buildQuestion() {
-		//TODO
-		
-		//Add branchID list
-		//Add question priority
-		//Add Question
-		//Add inputRange
-		//Add answers
+	public void printQuestion() {
+		System.out.println(this.branchID.toString());
+		System.out.println(this.questionPriority);
+		System.out.println(this.question);
+		System.out.println(this.inputRange);
+		System.out.println(this.answers.toString());
 	}
 	
 	//Parents and children lists will be formed in some sort of edge builder class
