@@ -1,4 +1,4 @@
-package src.main_bodies;
+package main_bodies;
 
 import java.util.ArrayList;
 
