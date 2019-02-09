@@ -1,10 +1,12 @@
 package src;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 public class Decision_Matrix {
+
 
   public int Decision() {
     Integer decision = 0;
-    HashMap<Integer, String> keywords = new HashMap<Integer, String>();
-    HashMap<Integer, String> userInput = new HashMap<Integer, String>();
 
     switch () {
       case 1:
@@ -14,4 +16,10 @@ public class Decision_Matrix {
       }
       return decision;
     }
+
+  private HashMap<Integer, String> getHashValue(ArrayList<String> list) {
+    HashMap<Integer, String> hash = new HashMap<Integer, String>();
+
+    return hash;
+  }
 }
