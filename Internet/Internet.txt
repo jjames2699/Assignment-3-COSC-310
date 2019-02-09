@@ -1,4 +1,4 @@
-01
+00
 0
 Are you connected to Wifi or Ethernet?
 2

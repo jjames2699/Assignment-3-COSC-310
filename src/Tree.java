@@ -1,3 +1,7 @@
+/*Source: https://stackoverflow.com/questions/3522454/java-tree-data-structure
+ * uploaded by jjnguy 
+ * changed to read Strings and work with QuestionBuilder class
+ */
 package src;
 
 import java.util.ArrayList;
@@ -19,7 +23,6 @@ public class Tree<T>{
 		  		root.qb = new QuestionBuilder("Internet");
 		  		root.qb.buildQuestions();
 		  		root.children = root.qb.getBuiltQuestions();
-		  		root.children.get(0).printQuestion();
 		  	}
 		  	else if(i==2) {//TV
 		  		String initial = "Are you watching Cable or Netflix?";
@@ -37,6 +40,9 @@ public class Tree<T>{
 		  	}
 
 		}
+	    public ArrayList<Question> getNextQuestion() {
+	    	return root.qb.getBuiltQuestions();
+	    }
 	    
 	    public void add(String question) {
 	    	if(root==null) {
