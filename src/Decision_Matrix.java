@@ -1,15 +1,18 @@
 package src;
+
+import java.util.HashMap;
+
 public class Decision_Matrix {
 
 
   public int Decision() {
     Integer decision = 0;
-    Hashmap<Integer, String> keywords = new Hashmap<Integer, String>();
-    Hashmap<Integer, String> userInput = new Hashmap<Integer, String>();
+    HashMap<Integer, String> keywords = new HashMap<Integer, String>();
+    HashMap<Integer, String> userInput = new HashMap<Integer, String>();
 
 
 
-    switch () {
+    switch (1) {
       case 1:
 
       case 2:
