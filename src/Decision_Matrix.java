@@ -1,17 +1,20 @@
+package src;
 public class Decision_Matrix {
 
-  public Decision() {
-    Hasmap<int, String> keywords = new Hasmap<int, String>;
-    Hasmap<int, String> userInput = new Hashmap<int, String>;
+
+  public int Decision() {
+    Integer decision = 0;
+    Hashmap<Integer, String> keywords = new Hashmap<Integer, String>();
+    Hashmap<Integer, String> userInput = new Hashmap<Integer, String>();
+
+
+
     switch () {
-      case() {
+      case 1:
+
+      case 2:
 
       }
-      case() {
-
-      }
+      return decision;
     }
-
-  }
-
 }
