@@ -6,7 +6,7 @@ public class Testing {
 		// TODO Auto-generated method stub
 		String user= "";
 		//BotTree bot = new BotTree(0); //This is going to be the initial instance of whatever tree class we make
-		SOTree<String> start = new SOTree<String>(0);
+		Tree<String> start = new Tree<String>(0);
 		String initialMsg = (String) start.getRootData(); //Root contains the first String
 		System.out.println(initialMsg); //Print initial message
 		UserInput ui= new UserInput(); //Create instance of User Input class
@@ -18,8 +18,7 @@ public class Testing {
 		if(user.contains("phone")) {selection = 3;} //phone = tree #3
 		
 		
-		//this doesnt work yet... see initializeTree method in SOTree
-		SOTree<String> bot = new SOTree<String>(selection); //the tree created from user's input
+		Tree<String> bot = new Tree<String>(selection); //the tree created from user's input
 		String response = (String) bot.getRootData(); //set the response to the root (first message of tree)
 		System.out.println(response); //print first msg of tree
 		user = ui.getInput(); //read user input
