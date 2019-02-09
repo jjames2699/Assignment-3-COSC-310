@@ -34,7 +34,6 @@ public class Tree{
 		  		root = new Node<String>("Are you using a Mobile phone or Landline phone?");
 		  		root.qb = new QuestionBuilder("Phone");
 		  		root.children = root.qb.getBuiltQuestions();
-		  		
 		  	}
 
 		}
@@ -47,8 +46,7 @@ public class Tree{
 	    	if(root==null) {
 	    		root= new Node<String>(question); //create root node based on data
 	    		root.data = question; 
-	    		root.children = new ArrayList<Question>(); //initalize children arraylist
-	    		
+	    		root.children = new ArrayList<Question>(); //Initialize children ArrayList
 	    	}
 	    	else { //root is already set to something
 	    		Node<String> n = new Node<String>(question); //create new node for data
