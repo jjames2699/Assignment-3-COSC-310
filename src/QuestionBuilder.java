@@ -16,6 +16,7 @@ public class QuestionBuilder {
 	
 	public ArrayList<Question> getBuiltQuestions() {return this.builtQuestions;}
 	
+	
 	public void buildQuestions() {		
 		Question temp;
 		String tempLine;

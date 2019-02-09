@@ -1,5 +1,0 @@
-0000
-0
-How many feet away are you from the router?
-1
-1) 0 feet
