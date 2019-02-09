@@ -8,9 +8,9 @@ public class EdgeBuilder {
 
 	EdgeBuilder(ArrayList<Question> list){
 		this.edges = new ArrayList<>();
+		this.edges.ensureCapacity(list.size() + 1);
 		this.edges.add(buildRoot());
 		
-		this.edges.ensureCapacity(list.size() + 1);
 		
 		for(int i=0; i<list.size(); i++) {
 			this.edges.add(list.get(i));
