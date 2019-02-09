@@ -1,7 +1,5 @@
 0000
 0
-Question
-#ans
-1)
-2)
-3)
+How many feet away are you from the router?
+1
+1) 0 feet

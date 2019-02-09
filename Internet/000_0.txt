@@ -1,7 +1,6 @@
 000
 0
-Question
-#ans
-1)
-2)
-3)
+Is your router plugged in?
+2
+1) yes
+2) no
