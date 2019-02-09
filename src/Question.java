@@ -10,13 +10,13 @@ public class Question {
 	private String question;
 	private int inputRange;
 	private ArrayList<String> answers;
-	private ArrayList<Question> parents;
+	//private ArrayList<Question> parents;
 	private ArrayList<Question> children;
 	
 	Question() {	
 		branchID = new ArrayList<>();
 		this.answers = new ArrayList<>();
-		this.parents = new ArrayList<>();
+		//this.parents = new ArrayList<>();
 		this.children = new ArrayList<>();
 		
 		questionID++;
@@ -28,11 +28,12 @@ public class Question {
 	public void setInputRange(int inputRange) {this.inputRange = inputRange;}
 	
 	//Getters
+	public ArrayList<Integer> getBranchID() {return this.branchID;}
 	public int getQuestionPriority() {return this.questionPriority;}
 	public String getQuestion() {return this.question;}
 	public int getInputRange() {return this.inputRange;}
 	public ArrayList<String> getAnswers() {return this.answers;}
-	public ArrayList<Question> getParent() {return this.parents;}
+	//public ArrayList<Question> getParent() {return this.parents;}
 	public ArrayList<Question> getChildren() {return this.children;}
 	
 	//ArrayList Modifiers
@@ -44,12 +45,16 @@ public class Question {
 	public void setAnswer(String ans, int pos) {this.answers.set(pos, ans);}
 	public void removeAnswer(int pos) {this.answers.remove(pos);}
 	
+	/*
 	public void addParent(Question parent) {this.parents.add(parent);}
+	public void setParent(int pos, Question parent) {this.parents.set(pos, parent);}
 	public void removeParent(Question parent) {this.parents.remove(parent);}
 	public void trimParents() {this.parents.trimToSize();}
 	public void setRoot() {this.parents = null;}
+	*/
 	
 	public void addChild(Question child) {this.children.add(child);}
+	public void setChild(int pos, Question child) {this.children.set(pos, child);}
 	public void removeChild(Question child) {this.children.remove(child);}
 	public void trimChildren() {this.children.trimToSize();}
 	public void setEnd() {this.children = null;}
