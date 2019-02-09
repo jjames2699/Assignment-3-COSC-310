@@ -1,14 +1,16 @@
 package src;
 
+import java.util.ArrayList;
+
 public class Testing {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String user= "";
 		//BotTree bot = new BotTree(0); //This is going to be the initial instance of whatever tree class we make
-		SOTree<String> start = new SOTree<String>(0);
-		String initialMsg = (String) start.getRootData(); //Root contains the first String
-		System.out.println(initialMsg); //Print initial message
+		Tree start = new Tree(0);
+		ArrayList<Question> initial = start.getNextQuestion();//
+		initial.get(0).printQuestion();//print the initial question
 		UserInput ui= new UserInput(); //Create instance of User Input class
 		user = ui.getInput();	//Read user input via Scanner in UI class
 		
@@ -18,13 +20,12 @@ public class Testing {
 		if(user.contains("phone")) {selection = 3;} //phone = tree #3
 		
 		
-		//this doesnt work yet... see initializeTree method in SOTree
-		SOTree<String> bot = new SOTree<String>(selection); //the tree created from user's input
-		String response = (String) bot.getRootData(); //set the response to the root (first message of tree)
-		System.out.println(response); //print first msg of tree
+		Tree bot = new Tree(selection); //the tree created from user's input
+		ArrayList<Question> questions = bot.getNextQuestion(); //ArrayList that hold the questions
+		for(int i=0; i<questions.size(); i++) {
+		questions.get(i).printQuestion(); //get next question
 		user = ui.getInput(); //read user input
-		//do next steps based on which tree is created
-		
+		}		
 	}
 
 }
