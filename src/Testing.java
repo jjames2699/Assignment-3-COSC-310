@@ -1,5 +1,7 @@
 package src;
 
+import java.util.ArrayList;
+
 public class Testing {
 
 	public static void main(String[] args) {
@@ -19,9 +21,12 @@ public class Testing {
 		
 		
 		Tree<String> bot = new Tree<String>(selection); //the tree created from user's input
-		String response = (String) bot.getRootData(); //set the response to the root (first message of tree)
-		System.out.println(response); //print first msg of tree
+		ArrayList<Question> questions = bot.getNextQuestion();
+		for(int i=0; i<questions.size(); i++) {
+		questions.get(i).printQuestion();
 		user = ui.getInput(); //read user input
+		}
+		
 		//do next steps based on which tree is created
 		
 	}
