@@ -1,6 +1,0 @@
-000
-0
-How many feet away are you from the router?
-2
-1) >25
-2) <25

@@ -1,6 +1,0 @@
-0
-2
-do you have power?
-2
-1) yes
-2) no
