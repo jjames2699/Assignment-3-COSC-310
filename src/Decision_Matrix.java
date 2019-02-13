@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class Decision_Matrix {
   public static void main(String[] args) {
     ArrayList<String> s = new ArrayList<String>();
-    s.add("hi");
+    s.add("internet");
     s.add("yes");
     HashMap<Integer, String> h = getHashValue(s);
     System.out.println(s);
@@ -32,7 +32,7 @@ public class Decision_Matrix {
     Iterator<String> it = list.iterator();
     while(it.hasNext()){
       String str = it.next();
-      Integer i = new Integer(str.hashCode());
+      Integer i = str.hashCode();
       hash.put(i, str);
     }
     return hash;
