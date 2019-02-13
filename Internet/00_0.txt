@@ -1,5 +1,5 @@
-0000
+00
 0
-How many feet away are you from the router?
+How many hours has this been a problem?
 1
-1) 0 feet
+1) 0 hours
