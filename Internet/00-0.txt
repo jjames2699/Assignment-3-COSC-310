@@ -1,5 +1,6 @@
 00
 0
-How many hours has this been a problem?
-1
-1) 0 hours
+Is your router plugged in?
+2
+1) yes
+2) no
