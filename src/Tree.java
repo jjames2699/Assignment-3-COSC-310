@@ -28,7 +28,7 @@ public class Tree{
 		  		root.qb = new QuestionBuilder("TV"); //TV folder stores questions
 		  		root.children = getNextQuestion(); //load built questions into children
 		  	}
-		  	else if(i==2) {//Phone
+		  	else if(i==3) {//Phone
 		  		root = new Node<String>("Are you using a Mobile phone or Landline phone?"); //load initial into new node
 		  		root.qb = new QuestionBuilder("Phone"); //Phone folder stores questions
 		  		root.children = getNextQuestion(); //load built questions into children

@@ -16,8 +16,8 @@ public class Testing {
 		
 		int selection = 0; //select which tree to go to based on user's input
 		if(user.contains("internet")) {selection = 1;} //internet = tree #1
-		if(user.contains("tv")) {selection = 2;} //tv = tree #2
-		if(user.contains("phone")) {selection = 3;} //phone = tree #3
+		else if(user.contains("tv")) {selection = 2;} //tv = tree #2
+		else if(user.contains("phone")) {selection = 3;} //phone = tree #3
 		
 		
 		Tree bot = new Tree(selection); //the tree created from user's input
