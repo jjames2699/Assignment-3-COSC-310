@@ -23,5 +23,8 @@ public class UserInput {
 		}
 		return al;
 	}
-
+	
+	public void close() {
+		input.close();
+	}
 }
