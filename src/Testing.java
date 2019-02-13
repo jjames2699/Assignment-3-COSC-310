@@ -23,8 +23,9 @@ public class Testing {
 		Tree bot = new Tree(selection); //the tree created from user's input
 		ArrayList<Question> questions = bot.getNextQuestion(); //ArrayList that hold the questions
 		for(int i=0; i<questions.size(); i++) {
-		questions.get(i).printQuestion(); //get next question
-		user = ui.getInput(); //read user input
+			user = "";
+			questions.get(i).printQuestion(); //get next question
+			user = ui.getInput(); //read user input
 		}		
 	}
 

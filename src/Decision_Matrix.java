@@ -32,7 +32,7 @@ public class Decision_Matrix {
     Iterator<String> it = list.iterator();
     while(it.hasNext()){
       String str = it.next();
-      Integer i = new Integer(str.hashCode());
+      Integer i = str.hashCode();
       hash.put(i, str);
     }
     return hash;

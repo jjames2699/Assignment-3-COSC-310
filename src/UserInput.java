@@ -10,9 +10,9 @@ public class UserInput {
 	public String getInput() {
 		//Uses a Scanner to read user input from the Console.
 		input = new Scanner(System.in);
-		user = input.nextLine().toLowerCase(); //Read the whole line so that it can be parsed to find key words
+		user = input.nextLine(); //Read the whole line so that it can be parsed to find key words
 		input.close();
-		return user;
+		return user.toLowerCase();
 	}
 
 	// Seperates User Input by white space and stores words into ArrayList
