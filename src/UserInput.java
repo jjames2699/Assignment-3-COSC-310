@@ -11,7 +11,6 @@ public class UserInput {
 		//Uses a Scanner to read user input from the Console.
 		input = new Scanner(System.in);
 		user = input.nextLine(); //Read the whole line so that it can be parsed to find key words
-		input.close();
 		return user.toLowerCase();
 	}
 
