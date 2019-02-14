@@ -24,6 +24,7 @@ public class UserInput {
 		return al;
 	}
 	
+	// After finishing a conversation call this method to close the input scanner.
 	public void close() {
 		input.close();
 	}
