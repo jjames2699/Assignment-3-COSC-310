@@ -26,7 +26,8 @@ public class Testing {
 			user = "";
 			questions.get(i).printQuestion(); //get next question
 			user = ui.getInput(); //read user input
-		}		
+		}	
+		
 	}
 
 }
