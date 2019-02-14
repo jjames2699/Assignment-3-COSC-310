@@ -10,7 +10,7 @@ public class QuestionBuilderTest {
 		
 		QuestionBuilder qb = new QuestionBuilder(folderName);
 		qb.buildQuestions();
-		q = qb.getBuiltQuestions();
+		q =new ArrayList<> (qb.getBuiltQuestions().values());
 		
 		q.get(0).printQuestion();
 		q.get(1).printQuestion();

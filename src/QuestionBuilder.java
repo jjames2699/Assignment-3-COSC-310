@@ -1,6 +1,7 @@
 package src;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -13,7 +14,7 @@ import java.io.FileNotFoundException;
  */
 public class QuestionBuilder {
 	private File dir;
-	private ArrayList<Question> builtQuestions;
+	private HashMap<String, Question> builtQuestions;
 	
 	/*
 	 * Constructor
@@ -23,11 +24,11 @@ public class QuestionBuilder {
 	 */
 	QuestionBuilder(String folderName) {
 		this.dir = new File(folderName);
-		this.builtQuestions = new ArrayList<>();
+		this.builtQuestions = new HashMap<>();
 	}
 	
 	//Returns builtQuestions
-	public ArrayList<Question> getBuiltQuestions() {return this.builtQuestions;}
+	public  HashMap<String, Question> getBuiltQuestions() {return this.builtQuestions;}
 	
 	/*
 	 * Method: buildQuestions
@@ -67,7 +68,7 @@ public class QuestionBuilder {
 					temp.addAnswer(s.nextLine());
 				}
 				
-				builtQuestions.add(temp);
+				builtQuestions.put(file.getName(), temp);
 				temp = null;
 				
 				s.close();	
