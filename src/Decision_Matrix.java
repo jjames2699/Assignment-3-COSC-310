@@ -3,7 +3,7 @@ package src;
 //started Feb 8 worked for 1 hour
 //Feb 12 worked on it for 3 hours
 //Feb 13 worked on it for 3 hours
-
+//note to self spilt up into helper methods for unit testing
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
