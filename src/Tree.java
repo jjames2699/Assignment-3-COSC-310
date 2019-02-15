@@ -30,12 +30,11 @@ public class Tree{
 		  		root.qb.buildQuestions();
 		  		root.children = getNextQuestion(); //load built questions into children
 		  	}
-
 		}
+		
 	    public HashMap<String, Question> getNextQuestion() {
 	    	return root.qb.getBuiltQuestions(); //returns ArrayList of built questions
 	    }
-	    
 	    
 	    public void add(String question) {
 	    	if(root==null) {
@@ -49,6 +48,7 @@ public class Tree{
 	    		//root.children.add(new Question(n)); //add new node to root's child array list
 	    	}
 	    }
+	    
 	    public static class Node<T> { //basic node class
 	        private T data;
 			private Node<T> parent;
