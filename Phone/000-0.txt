@@ -1,6 +1,6 @@
 000
 0
-Is your Phone still covered under warranty?
+Does it show that your phone is connected to a service provider?
 2
 1) yes
 2) no
