@@ -33,6 +33,7 @@ public class Testing {
 			questions.get(file).printQuestion();
 			user = ui.getInput();
 			file = d.Decision(user, file, selection);
+			System.out.println(file);
 		}
 //		ArrayList<Question> questions = bot.getNextQuestion(); //ArrayList that hold the questions
 //		for(int i=0; i<questions.size(); i++) {
