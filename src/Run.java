@@ -31,7 +31,7 @@ public class Run {
 		UserInput ui;
 		String file;
 		HashMap<String, Question> questions;
-		Decision_Matrix d;
+		DecisionMatrix d;
 
 /*
  * Method: initialize
@@ -76,7 +76,7 @@ public class Run {
 		Tree bot = new Tree(getSelection());
 		setFile("0-0.txt");
 		setQuestions(bot.getNextQuestion());
-		setDecisionMatrix(new Decision_Matrix());
+		setDecisionMatrix(new DecisionMatrix());
 	}
 	
 	/*
@@ -112,7 +112,7 @@ public class Run {
 	private void setUI(UserInput ui) {this.ui=ui;}	
 	private void setFile(String file) {this.file= file;}
 	private void setQuestions(HashMap<String, Question> questions) {this.questions=questions;}
-	private void setDecisionMatrix(Decision_Matrix decisionMatrix) {this.d=decisionMatrix;}	
+	private void setDecisionMatrix(DecisionMatrix decisionMatrix) {this.d=decisionMatrix;}	
 	
 	//getters (only used locally)
 	private int getSelection() {return this.selection;}

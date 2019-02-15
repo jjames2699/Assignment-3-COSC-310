@@ -8,7 +8,7 @@ package src;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-public class Decision_Matrix {
+public class DecisionMatrix {
   String tryAgain = "Did not understand that, please try again.";
   //inputs are userInput, filename
   //note number of answer = 4th line in txt file
