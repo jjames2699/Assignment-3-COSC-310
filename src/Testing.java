@@ -1,51 +1,15 @@
 package src;
 
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Testing {
 
 	public static void main(String[] args) throws FileNotFoundException {
-		// TODO Auto-generated method stub
-		while (true) {
-			//BotTree bot = new BotTree(0); //This is going to be the initial instance of whatever tree class we make
-			Tree start = new Tree(0);
-			ArrayList<Question> initial = new ArrayList<>(start.getNextQuestion().values());//
-			int selection = 0; //select which tree to go to based on user's input
-			UserInput ui; String user= "";
-			while(true) {
-			initial.get(0).printQuestion();//print the initial question
-			ui= new UserInput(); //Create instance of User Input class
-			user = ui.getInput();	//Read user input via Scanner in UI class
-			if(user.contains("internet")) {selection = 1; break;} //internet = tree #1
-			else if(user.contains("phone")) {selection = 2; break;} //phone = tree #2
-			//else if(user.contains("tv")) {selection = 3;} //tv = tree #3
-			else {System.out.println("Entry invalid, try again");}
-			}
-			Tree bot = new Tree(selection); //the tree created from user's input
-			//standard file opening
-			String file = "0-0.txt";
-			HashMap<String, Question> questions = bot.getNextQuestion(); //ArrayList that hold the questions
-			Decision_Matrix d = new Decision_Matrix();
-			while (true) {
-				questions.get(file).printQuestion();
-				if(file.equals("loop-0.txt")){
-					break;
-				}else if(file.equals("end-0.txt")){
-					System.exit(0);
-				}
-				user = ui.getInput();
-				file = d.Decision(user, file, selection);
-			}
+		Run run = new Run();
+		while(true) {
+		run.initialize();
+		run.initializeTree();
+		run.runLoop();
 		}
-//		ArrayList<Question> questions = bot.getNextQuestion(); //ArrayList that hold the questions
-//		for(int i=0; i<questions.size(); i++) {
-//			user = "";
-//			questions.get(i).printQuestion(); //get next question
-//			user = ui.getInput(); //read user input
-//		}
-		
 	}
-
 }
