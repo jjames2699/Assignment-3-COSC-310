@@ -1,10 +1,8 @@
 package src;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class Testing {
 
@@ -27,11 +25,13 @@ public class Testing {
 			Decision_Matrix d = new Decision_Matrix();
 			while (true) {
 				questions.get(file).printQuestion();
+				if(file.equals("loop-0.txt")){
+					break;
+				}else if(file.equals("end-0.txt")){
+					System.exit(0);
+				}
 				user = ui.getInput();
 				file = d.Decision(user, file, selection);
-				if (file.equals("false")) {
-					break;
-				}
 			}
 		}
 //		ArrayList<Question> questions = bot.getNextQuestion(); //ArrayList that hold the questions

@@ -10,6 +10,12 @@ import java.io.FileNotFoundException;
 public class Decision_Matrix {
   //inputs are userInput, filename
   //note number of answer = 4th line in txt file
+  public String[] letsSplit(String s){
+    String[] files_part1 = s.split("\\.");
+    String[] files_part2 = files_part1[0].split("-");
+    String[] split = {files_part1[0],files_part2[0],files_part2[1]};
+    return split;
+  }
   public String Decision(String userInput, String file, int selection) throws FileNotFoundException {
     String decision;
     String tryAgain = "Did not understand that, please try again.";
@@ -115,15 +121,7 @@ public class Decision_Matrix {
         //new priority if empty question
         files_part2[1]="1";
       }
-      else if(i==0){
-        //ends program
-    	in.close();
-        System.exit(0);
-      }
-      else if(i==-1){
-        //return the first file in the sequence
-        return "false";
-      }
+
       //decision = path, priority and file type
       decision = files_part2[0]+"-"+files_part2[1]+"."+files_part1[1];
       return decision;
