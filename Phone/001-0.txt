@@ -1,6 +1,6 @@
-0001
+001
 0
-Please plug it back in. Did that fix your problem?
+Does it show that your phone is connected to a service provider?
 2
 1) yes
 2) no

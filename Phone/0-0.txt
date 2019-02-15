@@ -2,5 +2,5 @@
 0
 Are you using a landline or a cellular device?
 2
-1) Landline
-2) cellular
+1) cellular
+2) landline
