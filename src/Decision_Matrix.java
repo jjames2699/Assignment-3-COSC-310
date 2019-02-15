@@ -8,6 +8,8 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 public class Decision_Matrix {
+  String[] list;
+  String tryAgain = "Did not understand that, please try again.";
   //inputs are userInput, filename
   //note number of answer = 4th line in txt file
   public String[] letsSplit(String s){
@@ -16,13 +18,27 @@ public class Decision_Matrix {
     String[] split = {files_part1[0],files_part2[0],files_part2[1]};
     return split;
   }
+  public String anythingElse(){
+    for(int j = 0; j<list.length; j++){
+      //if the word says answer 1 point to begin the loop again
+      if(list[j].contains("yes")){
+        return "loop-0.txt";
+      }
+      //if the word says answer 2 point to end the program
+      else if(list[j].contains("no")){
+        return "end-0.txt";
+      }else {
+        System.out.println(tryAgain);
+        return "anythingElse-0.txt";
+      }
+    }
+  }
   public String Decision(String userInput, String file, int selection) throws FileNotFoundException {
     String decision;
-    String tryAgain = "Did not understand that, please try again.";
     //make the user input lowercase
     //userInput = userInput.toLowerCase();
     //this line makes the string into an array of string separated at every space
-    String[] list = userInput.split(" ");
+    this.list = userInput.split(" ");
     //these 2 lines separates the file name by - and .
     String[] files_part1 = file.split("\\.");
     String[] files_part2 = files_part1[0].split("-");
@@ -64,17 +80,20 @@ public class Decision_Matrix {
     }
     if(check.contains("anything else"))
     {
+      for(int j = 0; j<list.length; j++){
         //if the word says answer 1 point to begin the loop again
-        if(list[0].contains("yes")){
+        if(list[j].contains("yes")){
           return "loop-0.txt";
         }
         //if the word says answer 2 point to end the program
-        else if(list[0].contains("no")){
+        else if(list[j].contains("no")){
           return "end-0.txt";
         }else {
           System.out.println(tryAgain);
           return file;
         }
+      }
+
     }
       if(i==3){
         for(int j = 0; j<list.length; j++){

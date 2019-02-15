@@ -1,4 +1,4 @@
-10111110
+101111101
 0
 Please use that Ethernet cable. Did that fix the issue?
 2

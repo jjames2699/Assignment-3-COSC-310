@@ -4,8 +4,6 @@
     <list default="true" id="021f8076-b095-4633-a119-76045560710c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Decision_Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Decision_Matrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QuestionBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Decision_Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="125" column="66" selection-start-line="125" selection-start-column="66" selection-end-line="125" selection-end-column="66" />
+            <state relative-caret-position="1411">
+              <caret line="83" column="65" lean-forward="true" selection-start-line="83" selection-start-column="65" selection-end-line="83" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,7 +175,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550257930181" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550258267408" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -252,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550205982147</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="made it auto end">
+      <created>1550258037172</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550258037172</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -329,7 +334,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="starting" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting" />
+    <MESSAGE value="made it auto end" />
+    <option name="LAST_COMMIT_MESSAGE" value="made it auto end" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Internet/00_0.txt" />
@@ -433,8 +439,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Decision_Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="125" column="66" selection-start-line="125" selection-start-column="66" selection-end-line="125" selection-end-column="66" />
+        <state relative-caret-position="1411">
+          <caret line="83" column="65" lean-forward="true" selection-start-line="83" selection-start-column="65" selection-end-line="83" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
