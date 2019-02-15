@@ -8,38 +8,15 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 public class Decision_Matrix {
-  String[] list;
-  String tryAgain = "Did not understand that, please try again.";
   //inputs are userInput, filename
   //note number of answer = 4th line in txt file
-  public String[] letsSplit(String s){
-    String[] files_part1 = s.split("\\.");
-    String[] files_part2 = files_part1[0].split("-");
-    String[] split = {files_part1[0],files_part2[0],files_part2[1]};
-    return split;
-  }
-  public String anythingElse(){
-    for(int j = 0; j<list.length; j++){
-      //if the word says answer 1 point to begin the loop again
-      if(list[j].contains("yes")){
-        return "loop-0.txt";
-      }
-      //if the word says answer 2 point to end the program
-      else if(list[j].contains("no")){
-        return "end-0.txt";
-      }else {
-        System.out.println(tryAgain);
-        return "anythingElse-0.txt";
-      }
-    }
-    return null;
-  }
   public String Decision(String userInput, String file, int selection) throws FileNotFoundException {
     String decision;
+    String tryAgain = "Did not understand that, please try again.";
     //make the user input lowercase
     //userInput = userInput.toLowerCase();
     //this line makes the string into an array of string separated at every space
-    this.list = userInput.split(" ");
+    String[] list = userInput.split(" ");
     //these 2 lines separates the file name by - and .
     String[] files_part1 = file.split("\\.");
     String[] files_part2 = files_part1[0].split("-");
@@ -81,20 +58,17 @@ public class Decision_Matrix {
     }
     if(check.contains("anything else"))
     {
-      for(int j = 0; j<list.length; j++){
         //if the word says answer 1 point to begin the loop again
-        if(list[j].contains("yes")){
+        if(list[0].contains("yes")){
           return "loop-0.txt";
         }
         //if the word says answer 2 point to end the program
-        else if(list[j].contains("no")){
+        else if(list[0].contains("no")){
           return "end-0.txt";
         }else {
           System.out.println(tryAgain);
           return file;
         }
-      }
-
     }
       if(i==3){
         for(int j = 0; j<list.length; j++){
@@ -141,7 +115,15 @@ public class Decision_Matrix {
         //new priority if empty question
         files_part2[1]="1";
       }
-
+      else if(i==0){
+        //ends program
+    	in.close();
+        System.exit(0);
+      }
+      else if(i==-1){
+        //return the first file in the sequence
+        return "false";
+      }
       //decision = path, priority and file type
       decision = files_part2[0]+"-"+files_part2[1]+"."+files_part1[1];
       return decision;
