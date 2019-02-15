@@ -25,7 +25,7 @@ public class Decision_Matrix {
       f = new File("Internet");
     }
     else if(selection==2){
-      f = new File("Phanswers[1");
+      f = new File("Phone");
     }
     for(File check: f.listFiles()){
       if(check.getName().equals(file)){
