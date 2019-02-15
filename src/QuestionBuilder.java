@@ -12,8 +12,8 @@ import java.io.FileNotFoundException;
  * Authors: Robin MacDonald
  */
 public class QuestionBuilder {
-	private File dir;
-	private ArrayList<Question> builtQuestions;
+	private File dir;								//Directory file
+	private ArrayList<Question> builtQuestions;		//ArrayList of completed Questions
 	
 	/*
 	 * Constructor
