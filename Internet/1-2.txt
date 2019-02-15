@@ -1,0 +1,6 @@
+1
+2
+Do you have an ethernet cable?
+2
+1) yes
+2) no
