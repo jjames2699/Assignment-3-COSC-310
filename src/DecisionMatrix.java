@@ -36,7 +36,7 @@ public class DecisionMatrix {
 
   public String[] threeOrTwo(int i, String userInput, String[] answers, String[] files_part2, String file){
     for(int j = 0; j<i; j++){
-      if(userInput.equalsIgnoreCase(answers[j].split(" ")[1])){
+      if(userInput.contains(answers[j].split(" ")[1])){
         files_part2[0]=files_part2[0]+j;
         //don't need to check anymore
         break;
@@ -83,11 +83,13 @@ public class DecisionMatrix {
     }
 
     int i = Integer.parseInt(s1);
-    if(check.contains("Did that"))
+    if(check.contains("Did")||check.contains("Does"))
     {
       //if the word says answer 1 point to begin the loop again
       if(userInput.contains(answers[0].split(" ")[1])) { //if they say yes
         return "anythingElse-0.txt";
+      }else if(i==1){
+        return "contact-0.txt";
       }
     }
     if(check.contains("anything else"))
