@@ -4,6 +4,27 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/*
+ * Class: Run
+ * Description: -	Main class to run the Chatbot
+ * 				-	Incorporates all other classes (directly or indirectly) 
+ * 				
+ * 	Dependencies- 	UserInput.java	
+ * 				-	DecisionMatrix.java
+ * 				-	Hashmap.java
+ * 
+ * 	Parameters	-   name -> class -> (type)
+ * 				-
+ * 				- 	selection -> (int)
+ * 				-	user -> UserInput -> (String)
+ * 				-	ui -> (UserInput)
+ * 				-	file -> (String) = File Name
+ * 				-	questions -> QuestionBuilder -> (Hashmap)
+ * 				-	d -> (DecisionMatrix)
+ * 	
+ * Authors: Daulton Baird
+ */
+
 public class Run {
 		int selection;
 		String user;
@@ -11,63 +32,93 @@ public class Run {
 		String file;
 		HashMap<String, Question> questions;
 		Decision_Matrix d;
-		
-	public Run() {
-		selection = 0;
-		user = "";
-		ui = null;
-	}
+
+/*
+ * Method: initialize
+ * Outputs:		-	Initial Tree
+ * 
+ * Description:	-	Creates Tree that asks the first Question
+ * 				-	sets int selection to 0
+ * 				-	while loop makes method loop until user gives correct input (Defensive Programming)
+ * 				-	Prints the First Question
+ * 				-	Assigns UserInput ui to new UserInput
+ *  			-	Assigns String user to the user's input
+ * 				-	Assigns selection based on the new Tree to be built
+ * 				-	If input is invalid print that it is invalid				
+ */
 	
 	public void initialize() {
 		Tree start = new Tree(0);
 		ArrayList<Question> initial = new ArrayList<>(start.getNextQuestion().values());//
-		setSelection(0); //select which tree to go to based on user's input
+		setSelection(0);
 		while(true) {
-		initial.get(0).printQuestion();//print the initial question
-		setUI(new UserInput()); //Create instance of User Input class
-		setUser(ui.getInput());	//Read user input via Scanner in UI class
-		if(user.contains("internet")) {setSelection(1); break;} //internet = tree #1
-		else if(user.contains("phone")) {setSelection(2); break;} //phone = tree #2
+		initial.get(0).printQuestion();
+		setUI(new UserInput());
+		setUser(ui.getInput());
+		if(user.contains("internet")) {setSelection(1); break;}
+		else if(user.contains("phone")) {setSelection(2); break;}
 		//else if(user.contains("tv")) {selection = 3;} //tv = tree #3
 		else {System.out.println("Entry invalid, try again");}
 		}
 	}
 	
+	/*
+	 * Method: initializeTree
+	 * Outputs:		-	"Internet" Tree or "Phone" Tree
+	 * 
+	 * Description:	-	Creates Tree based on input from initialize Method
+	 * 				-	Sets File to the initial file of the Folder 
+	 * 				-	Sets Hashmap questions via the nextQuestion method from the Tree
+	 * 				-	Sets DecisionMatrix d to new DecisionMatrix			
+	 */
+	
 	public void initializeTree() throws FileNotFoundException {
-		Tree bot = new Tree(getSelection()); //the tree created from user's input
-		//standard file opening
+		Tree bot = new Tree(getSelection());
 		setFile("0-0.txt");
-		setQuestions(bot.getNextQuestion()); //ArrayList that hold the questions
+		setQuestions(bot.getNextQuestion());
 		setDecisionMatrix(new Decision_Matrix());
 	}
 	
+	/*
+	 * Method: runLoop
+	 * Outputs:		-	Chatbot and User Conversation
+	 * 
+	 * Description:	-	while loop to continue until solution is found
+	 * 				-	If the current file is the loop file, break out of the while loop (goes back to top of outer while loop)
+	 * 				-	If the current file is the end file, print the "Thank you" string and then exit the program
+	 * 				-	Otherwise Print current question
+	 * 				-	Set String user to the user's input
+	 *  			-	Decide the next file via DecisionMatrix d			
+	 */
+	
 	public void runLoop() throws FileNotFoundException {
 		while (true) {
-			getQuestions().get(getFile()).printQuestion();
 			if(getFile().equals("loop-0.txt")){
 				break;
 			}else if(getFile().equals("end-0.txt")){
+				getQuestions().get(getFile()).printQuestion();
 				System.exit(0);
 			}
+			else {
+			getQuestions().get(getFile()).printQuestion();
 			setUser(ui.getInput());
 			file = d.Decision(getUser(), getFile(), getSelection());
+			}
 		}
 	}
-	//setters
-	public void setSelection(int selection) {this.selection=selection;}
-	public void setUser(String user) {this.user= user;}
-	public void setUI(UserInput ui) {this.ui=ui;}	
-	public void setFile(String file) {this.file= file;}
-	public void setQuestions(HashMap<String, Question> questions) {this.questions=questions;}
-	public void setDecisionMatrix(Decision_Matrix decisionMatrix) {this.d=decisionMatrix;}	
+	//setters (only used locally)
+	private void setSelection(int selection) {this.selection=selection;}
+	private void setUser(String user) {this.user= user;}
+	private void setUI(UserInput ui) {this.ui=ui;}	
+	private void setFile(String file) {this.file= file;}
+	private void setQuestions(HashMap<String, Question> questions) {this.questions=questions;}
+	private void setDecisionMatrix(Decision_Matrix decisionMatrix) {this.d=decisionMatrix;}	
 	
-	//getters
-	public int getSelection() {return this.selection;}
-	public String getUser() {return this.user;}
-	public UserInput getUI() {return ui;}
-	public String getFile() {return this.file;}
-	public HashMap<String, Question> getQuestions(){return this.questions;}
-	public Decision_Matrix getDecisionMatrix() {return this.d;}	
+	//getters (only used locally)
+	private int getSelection() {return this.selection;}
+	private String getUser() {return this.user;}
+	private String getFile() {return this.file;}
+	private HashMap<String, Question> getQuestions(){return this.questions;}	
 	
 	
 }
