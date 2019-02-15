@@ -8,7 +8,7 @@ package src;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-public class Decision_Matrix {
+public class DecisionMatrix {
   String tryAgain = "Did not understand that, please try again.";
   //inputs are userInput, filename
   //note number of answer = 4th line in txt file
@@ -33,37 +33,19 @@ public class Decision_Matrix {
       }
   }
   public String[] threeOrTwo(int i, String userInput, String[] answers, String[] files_part2, String file){
-    if(i==3){
-      //if the word says answer 1 add a 0 to the path
-      if(userInput.equalsIgnoreCase(answers[0].split(" ")[1])){
-        files_part2[0]=files_part2[0]+"0";
+    for(int j = 0; j<i; j++){
+      if(userInput.equalsIgnoreCase(answers[j].split(" ")[1])){
+        files_part2[0]=files_part2[0]+j;
         //don't need to check anymore
-        //if the word says answer 2 add a 1 to the path
-      }else if(userInput.equalsIgnoreCase(answers[1].split(" ")[1])){
-        files_part2[0]=files_part2[0]+"1";
-        //if the word says answer 3 add a 2 to the path
-      }else if(userInput.equalsIgnoreCase(answers[2].split(" ")[1])){
-        files_part2[0]= files_part2[0]+"2";
-      }else {
-        System.out.println(tryAgain);
-        return letsSplit(file);
+        break;
       }
-      files_part2[1]="0";
-    }else if(i==2){
-      //if the word says answer 1 add a 0 to the path
-      if(userInput.equalsIgnoreCase(answers[0].split(" ")[1])){
-        files_part2[0]=files_part2[0]+"0";
-      }
-      //if the word says answer 2 add a 1 to the path
-      else if(userInput.equalsIgnoreCase(answers[1].split(" ")[1])){
-        files_part2[0]=files_part2[0]+"1";
-      }else{
-        System.out.println(tryAgain);
-        return letsSplit(file);
-      }
-      //change priority
-      files_part2[1]="0";
     }
+    files_part2[1]="0";
+    if((files_part2[0]+files_part2[1]+files_part2[2]).equals(file)){
+      System.out.println(tryAgain);
+      return letsSplit(file);
+    }
+
     return files_part2;
   }
   public String Decision(String userInput, String file, int selection) throws FileNotFoundException {
