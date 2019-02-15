@@ -1,7 +1,6 @@
 00000
 0
-Loop back to start
+
 -1
-1)nothing
 
 this loops to start again

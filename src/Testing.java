@@ -18,6 +18,8 @@ public class Testing {
 			int selection = 0; //select which tree to go to based on user's input
 			if(user.contains("internet")) {selection = 1;} //internet = tree #1
 			else if(user.contains("phone")) {selection = 2;} //phone = tree #2
+			//else if(user.contains("tv")) {selection = 3;} //tv = tree #3
+			else {System.out.println("Entry invalid, try again");}
 			Tree bot = new Tree(selection); //the tree created from user's input
 			//standard file opening
 			String file = "0-0.txt";
