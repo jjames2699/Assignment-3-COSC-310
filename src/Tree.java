@@ -24,14 +24,10 @@ public class Tree{
 		  		root.qb.buildQuestions(); //load questions into array
 		  		root.children = getNextQuestion(); //load built questions into children
 		  	}
-//		  	else if(i==2) {//TV
-//		  		root = new Node<String>("Are you watching Cable or Netflix?"); //load initial into new node
-//		  		root.qb = new QuestionBuilder("TV"); //TV folder stores questions
-//		  		root.children = getNextQuestion(); //load built questions into children
-//		  	}
-		  	else if(i==2) {//Phone
+		  	else if(i==2) { //Phone
 		  		root = new Node<String>("Are you using a Mobile phone or Landline phone?"); //load initial into new node
 		  		root.qb = new QuestionBuilder("Phone"); //Phone folder stores questions
+		  		root.qb.buildQuestions();
 		  		root.children = getNextQuestion(); //load built questions into children
 		  	}
 
