@@ -20,7 +20,6 @@ public class Testing {
 		
 		int selection = 0; //select which tree to go to based on user's input
 		if(user.contains("internet")) {selection = 1;} //internet = tree #1
-		//else if(user.contains("tv")) {selection = 2;} //tv = tree #2
 		else if(user.contains("phone")) {selection = 2;} //phone = tree #3
 		
 		
