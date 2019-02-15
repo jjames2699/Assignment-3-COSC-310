@@ -17,7 +17,7 @@ public class Testing {
 		Run run = new Run();
 		while(true) {
 		run.initialize();
-		run.initializeTree(); 
+		run.initializeTree();
 		run.runLoop();
 		}
 	}
