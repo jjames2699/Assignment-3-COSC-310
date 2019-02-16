@@ -1,46 +1,25 @@
 package src;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Scanner;
-
+import java.io.IOException;
+/*
+ * Class: Testing
+ * Description: -	Test class that executes Chatbot
+ * 				-	Creates instance of Run Class
+ * 				-	while loop allows user to go back to the beginning if they have more than one issue
+ * 				-	Executes initialize method from Run Class
+ * 				-	Executes initializeTree method from Run Class
+ * 				-	Executes runLoop method from Run Class
+ * Authors: Daulton Baird
+ */
 public class Testing {
 
-	public static void main(String[] args) throws FileNotFoundException {
-		// TODO Auto-generated method stub
-		while (true) {
-			//BotTree bot = new BotTree(0); //This is going to be the initial instance of whatever tree class we make
-			Tree start = new Tree(0);
-			ArrayList<Question> initial = new ArrayList<>(start.getNextQuestion().values());//
-			initial.get(0).printQuestion();//print the initial question
-			UserInput ui= new UserInput(); //Create instance of User Input class
-			String user = ui.getInput();	//Read user input via Scanner in UI class
-			int selection = 0; //select which tree to go to based on user's input
-			if(user.contains("internet")) {selection = 1;} //internet = tree #1
-			else if(user.contains("phone")) {selection = 2;} //phone = tree #2
-			Tree bot = new Tree(selection); //the tree created from user's input
-			//standard file opening
-			String file = "0-0.txt";
-			HashMap<String, Question> questions = bot.getNextQuestion(); //ArrayList that hold the questions
-			Decision_Matrix d = new Decision_Matrix();
-			while (true) {
-				questions.get(file).printQuestion();
-				user = ui.getInput();
-				file = d.Decision(user, file, selection);
-				if (file.equals("false")) {
-					break;
-				}
-			}
+	public static void main(String[] args) throws IOException {
+		Run run = new Run();
+		System.out.println("Hello, I am Chatbot. I will be assisting you today.");
+		while(true) {
+		    run.initialize();
+		    run.initializeTree();
+		    run.runLoop();
 		}
-//		ArrayList<Question> questions = bot.getNextQuestion(); //ArrayList that hold the questions
-//		for(int i=0; i<questions.size(); i++) {
-//			user = "";
-//			questions.get(i).printQuestion(); //get next question
-//			user = ui.getInput(); //read user input
-//		}
-		
 	}
-
 }
