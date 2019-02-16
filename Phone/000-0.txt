@@ -1,0 +1,6 @@
+000
+0
+Does it show that your phone is connected to a service provider?
+2
+1) yes
+2) no

@@ -1,6 +1,6 @@
 00
 1
 Does your phone turn on?
-1
+2
 1) yes
 2) no
