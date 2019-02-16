@@ -89,8 +89,6 @@ public class DecisionMatrix {
       //if the word says answer 1 point to begin the loop again
       if(userInput.contains(answers[0].split(" ")[1])) { //if they say yes
         return "anythingElse-0.txt";
-      }else if(i==1){
-        return "contact-0.txt";
       }
     }
     if(check.contains("anything else"))
