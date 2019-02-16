@@ -1,6 +1,5 @@
 1
 2
 How old is your ethernet cable?
-2
-1) yes
-2) no
+1
+1) 17

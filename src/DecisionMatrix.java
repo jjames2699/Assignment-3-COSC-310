@@ -15,7 +15,7 @@ public class DecisionMatrix {
   public String[] letsSplit(String s){
     String[] files_part1 = s.split("\\.");
     String[] files_part2 = files_part1[0].split("-");
-    String[] split = {files_part2[0],files_part2[0],files_part1[1]};
+    String[] split = {files_part2[0],files_part2[1],files_part1[1]};
     return split;
   }
   //for asking if there is anything else
@@ -38,12 +38,13 @@ public class DecisionMatrix {
     for(int j = 0; j<i; j++){
       if(userInput.contains(answers[j].split(" ")[1])){
         files_part2[0]=files_part2[0]+j;
+        //reset priority
+        files_part2[1]="0";
         //don't need to check anymore
         break;
       }
     }
-    files_part2[1]="0";
-    if((files_part2[0]+files_part2[1]+files_part2[2]).equals(file)){
+    if((files_part2[0]+"-"+files_part2[1]+".txt").equals(file)){
       System.out.println(tryAgain);
       return letsSplit(file);
     }
@@ -96,10 +97,14 @@ public class DecisionMatrix {
     {
         return anythingElse(userInput);
     }
-    files_part2 = threeOrTwo(i, userInput, answers, files_part2, file);
+    if(i>1){
+      files_part2 = threeOrTwo(i, userInput, answers, files_part2, file);
+    }
+
     if(i==1){
       //new priority if empty question
-      files_part2[1]="1";
+      int j = Integer.parseInt(files_part2[1]) + 1;
+      files_part2[1]=j +"";
     }
     //decision = path, priority and file type
     decision = files_part2[0]+"-"+files_part2[1]+".txt";

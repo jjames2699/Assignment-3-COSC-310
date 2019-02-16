@@ -2,8 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="021f8076-b095-4633-a119-76045560710c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Phone/contact-0.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/01-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/01-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/1-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/1-2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/01-1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/10-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/01-2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/100-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/010-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/1000-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/0100-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/1001-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/0101-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/10010-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/01010-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/100100-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/010100-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/1001000-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/0101000-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/1001001-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/0101001-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/10010011-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/01010011-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/100101-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/010101-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/10011-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/01011-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/100111-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/010111-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/1001110-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/0101110-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/10011100-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/01011100-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/10011101-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/01011101-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/100111011-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/010111011-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/1001111-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/0101111-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/101-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/011-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/1011-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/0111-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/10110-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/01110-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/10111-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/01111-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/101110-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/011110-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/1011100-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/0111100-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/10111000-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/01111000-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/10111001-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/01111001-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/101110011-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/011110011-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/1011101-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/0111101-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/101111-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/011111-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/1011111-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/0111111-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/10111110-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/01111110-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/101111100-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/011111100-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/101111101-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/011111101-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/1011111011-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/0111111011-0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internet/10111111-0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Internet/01111111-0.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DecisionMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DecisionMatrix.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,96 +50,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DecisionMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+            <state relative-caret-position="438">
+              <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#anythingElse#0;class#DecisionMatrix#0" />
+                <element signature="e#2577#2635#1" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Phone/contact-0.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Phone/anythingElse-0.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Phone/end-0.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="6" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UserInput.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Testing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Run.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Question.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="61" column="19" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/QuestionBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="82" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -141,12 +107,15 @@
         <option value="$PROJECT_DIR$/src/Testing.java" />
         <option value="$PROJECT_DIR$/src/Tree.java" />
         <option value="$PROJECT_DIR$/src/Decision_Matrix.java" />
-        <option value="$PROJECT_DIR$/src/DecisionMatrix.java" />
         <option value="$PROJECT_DIR$/Phone/contact-0.txt" />
+        <option value="$PROJECT_DIR$/Internet/01-0.txt" />
+        <option value="$PROJECT_DIR$/Internet/01-1.txt" />
+        <option value="$PROJECT_DIR$/Internet/0101110-0.txt" />
+        <option value="$PROJECT_DIR$/src/DecisionMatrix.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -156,12 +125,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="COSC310_Lab2_G16" type="b2602c69:ProjectViewProjectNode" />
               <item name="COSC310_Lab2_G16" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="COSC310_Lab2_G16" type="b2602c69:ProjectViewProjectNode" />
+              <item name="COSC310_Lab2_G16" type="462c0819:PsiDirectoryNode" />
+              <item name="Internet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="COSC310_Lab2_G16" type="b2602c69:ProjectViewProjectNode" />
@@ -183,11 +158,10 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550270123199" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550276832223" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -290,14 +264,21 @@
       <option name="project" value="LOCAL" />
       <updated>1550268172240</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="contact stuff">
+      <created>1550270148735</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1550270148735</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17963752" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2964989" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -306,14 +287,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20910075" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21115974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053364" side_tool="true" weight="0.18558952" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4994664" visible="true" weight="0.18526544" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4994664" weight="0.18526544" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -369,7 +350,8 @@
     <MESSAGE value="starting" />
     <MESSAGE value="made it auto end" />
     <MESSAGE value="more helpers" />
-    <option name="LAST_COMMIT_MESSAGE" value="more helpers" />
+    <MESSAGE value="contact stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="contact stuff" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Internet/00_0.txt" />
@@ -391,21 +373,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Internet/0001-0.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/FileInputStream.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Scanner.java" />
-    <entry file="file://$PROJECT_DIR$/Internet/00-0.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Internet/0-0.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EdgeBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -461,30 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Testing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Run.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DecisionMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Phone/end-0.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -499,10 +444,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Internet/0-1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Internet/00-0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Internet/001-0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Internet/011-0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Internet/01-0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Internet/0001-0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Internet/010-0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Internet/010100-0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Internet/0101110-0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Run.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Testing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Internet/01-2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Internet/01-1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Internet/01-0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Internet/0-0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Phone/contact-0.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DecisionMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#anythingElse#0;class#DecisionMatrix#0" />
+            <element signature="e#2577#2635#1" />
+          </folding>
         </state>
       </provider>
     </entry>
