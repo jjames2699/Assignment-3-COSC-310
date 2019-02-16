@@ -61,6 +61,7 @@ public class Run {
 		Tree start = new Tree(0);
 		ArrayList<Question> initial = new ArrayList<>(start.getNextQuestion().values());
 		setSelection(0);
+		System.out.println("Hello, I am Chatbot. I will be assisting you today.");
 		while(true) {
 		initial.get(0).printQuestion();
 		convo.push("Chatbot: "+initial.get(0).getQuestion());

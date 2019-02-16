@@ -1,6 +1,7 @@
 package src;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 /*
  * Class: Testing
  * Description: -	Test class that executes Chatbot
@@ -13,7 +14,7 @@ import java.io.FileNotFoundException;
  */
 public class Testing {
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) throws IOException {
 		Run run = new Run();
 		while(true) {
 		    run.initialize();
