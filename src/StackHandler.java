@@ -24,7 +24,7 @@ public class StackHandler {
     public void conToFile() throws IOException {
         // These three Lines add the current date to the File StackLog
         Date timeStamp = new Date();
-        SimpleDateFormat ft = new SimpleDateFormat("yyyy.MM.dd_hh:mm:ss");
+        SimpleDateFormat ft = new SimpleDateFormat("yyyy.MM.dd_hh.mm.ss");
         String fileName = ft.format(timeStamp) + ".txt";
         // File Paths for Logs
         File logFolder = new File("StackLog");
@@ -40,7 +40,7 @@ public class StackHandler {
     public void pathToFile() throws IOException {
         // These three Lines add the current date to the File StackLog
         Date timeStamp = new Date();
-        SimpleDateFormat ft = new SimpleDateFormat("yyyy.MM.dd_hh:mm:ss");
+        SimpleDateFormat ft = new SimpleDateFormat("yyyy.MM.dd_hh.mm.ss");
         String fileName = ft.format(timeStamp) + ".txt";
         // File Paths for Logs
         File logFolder = new File("StackLog");
