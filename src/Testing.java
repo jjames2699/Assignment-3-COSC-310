@@ -16,6 +16,7 @@ public class Testing {
 
 	public static void main(String[] args) throws IOException {
 		Run run = new Run();
+		System.out.println("Hello, I am Chatbot. I will be assisting you today.");
 		while(true) {
 		    run.initialize();
 		    run.initializeTree();
