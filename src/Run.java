@@ -1,8 +1,10 @@
 package src;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Stack;
 
 /*
  * Class: Run
@@ -32,7 +34,15 @@ public class Run {
 		String file;
 		HashMap<String, Question> questions;
 		DecisionMatrix d;
+		StackHandler sh;
+		Stack<String> convo;
+		Stack<String> fileStack;
 
+		public Run() {
+			sh = new StackHandler();
+			convo = sh.initConversationLog();
+			fileStack = sh.initFileLog();
+		}
 /*
  * Method: initialize
  * Outputs:		-	Initial Tree
@@ -49,15 +59,16 @@ public class Run {
 	
 	public void initialize() {
 		Tree start = new Tree(0);
-		ArrayList<Question> initial = new ArrayList<>(start.getNextQuestion().values());//
+		ArrayList<Question> initial = new ArrayList<>(start.getNextQuestion().values());
 		setSelection(0);
 		while(true) {
 		initial.get(0).printQuestion();
+		convo.push("Chatbot: "+initial.get(0).getQuestion());
 		setUI(new UserInput());
 		setUser(ui.getInput());
+		convo.push("User: "+getUser());
 		if(user.contains("internet")) {setSelection(1); break;}
 		else if(user.contains("phone")) {setSelection(2); break;}
-		//else if(user.contains("tv")) {selection = 3;} //tv = tree #3
 		else {System.out.println("Entry invalid, try again");}
 		}
 	}
@@ -75,6 +86,7 @@ public class Run {
 	public void initializeTree() throws FileNotFoundException {
 		Tree bot = new Tree(getSelection());
 		setFile("0-0.txt");
+		fileStack.push(getFile());
 		setQuestions(bot.getNextQuestion());
 		setDecisionMatrix(new DecisionMatrix());
 	}
@@ -91,19 +103,24 @@ public class Run {
 	 *  			-	Decide the next file via DecisionMatrix d			
 	 */
 	
-	public void runLoop() throws FileNotFoundException {
+	public void runLoop() throws IOException {
 		while (true) {
 			if(getFile().equals("loop-0.txt")){
 				break;
 			}else if(getFile().equals("end-0.txt")){
 				getQuestions().get(getFile()).printQuestion();
+				convo.push("Chatbot: "+getQuestions().get(getFile()).getQuestion());
+				sh.conToFile();
+				sh.pathToFile();
 				System.exit(0);
 			}
-			else {
 			getQuestions().get(getFile()).printQuestion();
+			convo.push("Chatbot: "+getQuestions().get(getFile()).getQuestion());
 			setUser(ui.getInput());
+			convo.push("User: "+getUser());
 			file = d.Decision(getUser(), getFile(), getSelection());
-			}
+			fileStack.push(getFile());
+			
 		}
 	}
 	//setters (only used locally)
