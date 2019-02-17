@@ -8,6 +8,13 @@ import src.QuestionBuilder;
 
 import java.util.HashMap;
 
+/*
+ * Class: questionBuilderTest
+ * Description:	-	Tests the QuestionBuilder class using the "Questions" folder,
+ * 					and comparing it to the file "test" using the equals method in
+ * 					Question
+ * Authors: Robin MacDonald
+ */
 class questionBuilderTest {
 
 	@Test
