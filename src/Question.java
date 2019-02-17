@@ -1,6 +1,7 @@
 package src;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /*
  * Class: Question
@@ -25,7 +26,7 @@ public class Question {
 	 * Description: -	Initializes branchID, answers, parents, and children ArrayLists
 	 * 				-	Increments questionID
 	 */
-	Question() {	
+	public Question() {	
 		this.branchID = new ArrayList<>();
 		this.answers = new ArrayList<>();
 		//this.parents = new ArrayList<>();
@@ -84,6 +85,41 @@ public class Question {
 	public void removeChild(Question child) {this.children.remove(child);}
 	public void trimChildren() {this.children.trimToSize();}
 	public void setEnd() {this.children = null;}
+	
+	/*
+	 * Method: equals
+	 * Input:		-	Question to be compared
+	 * Output:		-	True if equal, false if not equal
+	 * Description: -	Compares two questions to see if they are equal
+	 * 				-	Used for unit testing
+	 */
+	public boolean equals(Question q) {
+		boolean[] equalityArr = new boolean[5];
+		
+		Arrays.fill(equalityArr, false);
+		
+		if(q.getBranchID().toString().equals(this.branchID.toString()))
+			equalityArr[0] = true;
+		
+		if(q.getQuestionPriority() == this.questionPriority)
+			equalityArr[1] = true;
+		
+		if(q.getQuestion().equals(this.question))
+			equalityArr[2] = true;
+		
+		if(q.getInputRange() == this.inputRange)
+			equalityArr[3] = true;
+		
+		if(q.getAnswers().toString().equals(this.answers.toString()))
+			equalityArr[4] = true;
+		
+		for(int i=0; i<equalityArr.length; i++) {
+			if(equalityArr[i] == false)
+				return false;
+		}
+		
+		return true;
+	}
 	
 	/*
 	 * Method: printQuestion
