@@ -1,6 +1,5 @@
 package src;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 import java.io.File;
@@ -60,7 +59,7 @@ public class QuestionBuilder {
 				temp.setQuestion(s.nextLine());
 				
 				//Read inputRange
-				tempLine = s.nextLine();
+				//tempLine = s.nextLine();
 				temp.setInputRange(Integer.parseInt(tempLine));
 				
 				//Read Answers
@@ -80,7 +79,4 @@ public class QuestionBuilder {
 			}
 		}
 	}
-	
-
-
 }
