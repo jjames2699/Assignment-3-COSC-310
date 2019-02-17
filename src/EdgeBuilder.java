@@ -70,12 +70,13 @@ public class EdgeBuilder {
 	 * 				-	If priority of "temp2"
 	 * 				-	Adds corresponding children into "children" of "temp1"
 	 * TODO:		- 	Integrate solution for case of matching branchID with
-	 * 					different question priorities
+	 * 					different question priorities [Complete]
 	 * 				-	Possible design change inside loop for simpler process
+	 * 					[Complete]
 	 */
 	public ArrayList<Question> buildEdges() {
-		Question temp1, temp2;
-		int temp1Size, temp2Size;
+		Question temp1, temp2, temp3;
+		int temp1Size, temp2Size, tempKey;
 		Iterator<Question> itr = this.edges.iterator();
 		
 		//Main loop
@@ -87,16 +88,43 @@ public class EdgeBuilder {
 			for(int i=0; i<edges.size(); i++) {
 				temp2 = edges.get(i);
 				temp2Size = temp2.getBranchID().size();
+				System.out.println(temp2Size);
+				tempKey = temp2.getBranchID().get(temp2Size-1);
 				
 				//Integrate priority somewhere around here
 				
 				//Checks to see if "temp2" branchID minus last term matches "temp1" branchID
-				if(temp2Size == temp1Size-1 && temp1.getChildren().contains(temp2) == false) {
-					if(temp2.getBranchID().subList(0, temp1Size-1).toString()
+				if(temp2Size == temp1Size+1 && temp1.getChildren().contains(temp2) == false) {
+					
+					//Checks to see if the temp2 branchID-1 contains temp1 branchID
+					if(temp2.getBranchID().subList(0, temp1Size).toString()
 							.equals(temp1.getBranchID().toString())) {
 						
-						//Set as child
-						temp1.setChild(temp2.getBranchID().get(temp2.getBranchID().size()-1), temp2);
+						System.out.println("Match Found");
+						
+						if(temp1.getChildren().get(tempKey) == null)
+							temp3 = temp1.getChildren().get(tempKey);
+						else
+							temp3 = null;
+						
+						do {							
+							if(temp3 != null) {
+								
+								if(temp3.getQuestionPriority() < temp2.getQuestionPriority()) {
+									tempKey = 0;
+									temp3 = temp3.getChildren().get(tempKey);
+								} else {
+									temp2 = temp3;
+									temp3 = null;
+								}
+							} else {
+								
+								//Set as child
+								temp1.setChild(tempKey, temp2);
+							}
+							
+						}while(temp3 != null);
+							
 					}
 				}
 			}
@@ -114,6 +142,8 @@ public class EdgeBuilder {
 			}
 			
 		}
+		
+		System.out.println("All Edges Linked Successfully.");
 		
 		//Returns "edges" with all nodes properly linked
 		return this.edges;

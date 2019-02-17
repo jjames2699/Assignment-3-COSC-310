@@ -29,7 +29,7 @@ public class Question {
 		this.branchID = new ArrayList<>();
 		this.answers = new ArrayList<>();
 		//this.parents = new ArrayList<>();
-		this.children = new ArrayList<>();
+		this.children = new ArrayList<>(5);
 		
 		questionID++;
 	}
@@ -53,6 +53,7 @@ public class Question {
 	public ArrayList<String> getAnswers() {return this.answers;}
 	//public ArrayList<Question> getParent() {return this.parents;}
 	public ArrayList<Question> getChildren() {return this.children;}
+	public Question getChild(int pos) {return this.children.get(pos);}
 	
 	/*
 	 * Specific ArrayList Modification Methods
