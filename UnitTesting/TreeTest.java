@@ -1,6 +1,7 @@
 package UnitTesting;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,7 +23,7 @@ public class TreeTest {
 		String initial = "Is your issue in regards to internet, or phone?";
 		Tree tree0 = new Tree(0);
 		ArrayList<Question> list = new ArrayList<>(tree0.getNextQuestion().values());
-		assertEquals(initial, list.get(0).getQuestion());
+		assertTrue(list.get(0).getQuestion().equals(initial));
 	}
 	@Test
 	void TestTree1() {
@@ -30,7 +31,7 @@ public class TreeTest {
 		Tree tree1 = new Tree(1);
 		HashMap<String, Question> questions = tree1.getNextQuestion();
 		questions.get("0-0.txt").getQuestion();
-		assertEquals(initial, questions.get("0-0.txt").getQuestion());
+		assertTrue(questions.get("0-0.txt").getQuestion().equals(initial));
 	}
 	@Test
 	void TestTree2() {
@@ -38,7 +39,7 @@ public class TreeTest {
 		Tree tree2 = new Tree(2);
 		HashMap<String, Question> questions = tree2.getNextQuestion();
 		questions.get("0-0.txt").getQuestion();
-		assertEquals(initial, questions.get("0-0.txt").getQuestion());
+		assertTrue(questions.get("0-0.txt").getQuestion().equals(initial));
 	}
 
 }

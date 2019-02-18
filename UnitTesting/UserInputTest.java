@@ -1,6 +1,7 @@
 package UnitTesting;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.util.Scanner;
 
@@ -25,6 +26,6 @@ public class UserInputTest {
 		
 	@Test
 	void TestUI() { 
-	assertEquals(userScanner,userUI);
+	assertTrue(userScanner.equals(userUI));
 	}
 }
