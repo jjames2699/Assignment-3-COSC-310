@@ -4,14 +4,13 @@ import src.DecisionMatrix;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 //coded by Randy Lee
 public class DecisionMatrixTest {
     DecisionMatrix test = new DecisionMatrix();
     String file = "0-0.txt", user = "yes";
-    String[] files_part2 = {"0","0","txt"}, answers = {"1) yes", "2) no"};
-    public static void main(String args[]){
-
-    }
+    String[] files_part2 = {"0","0","txt"}, answers = {"1) yes", "2) no"}, ansYes ={"00","0","txt"}, ansNo ={"01","0","txt"};
 
     @Test
     void testLetsSplit() {
@@ -19,19 +18,19 @@ public class DecisionMatrixTest {
     }
     @Test
     void testAnythingElseYes(){
-        assertTrue("loop.txt".equalsIgnoreCase(test.anythingElse(user)));
+        assertTrue("loop-0.txt".equals(test.anythingElse(user)));
     }
     @Test
     void testAnythingElseNo(){
-        assertTrue("end.txt".equalsIgnoreCase(test.anythingElse("no")));
+        assertTrue("end-0.txt".equals(test.anythingElse("no")));
     }
     @Test
     void testThreeOrTwoYes(){
-        assertTrue("00-0.txt".equals(test.threeOrTwo(2,user,answers,files_part2,file)));
+        assertTrue(Arrays.equals(test.threeOrTwo(2,"yes",answers,files_part2,file),ansYes));
     }
     @Test
     void testThreeOrTwoNo(){
-        assertTrue("01-0.txt".equals(test.threeOrTwo(2,"no",answers,files_part2,file)));
+        assertTrue(Arrays.equals(test.threeOrTwo(2,"no",answers,files_part2,file),ansNo));
     }
     @Test
     void testDoesOrDid(){
