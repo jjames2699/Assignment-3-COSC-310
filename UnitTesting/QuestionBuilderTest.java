@@ -38,8 +38,7 @@ class questionBuilderTest {
 		qb.buildQuestions();
 		
 		q = qb.getBuiltQuestions();
-		
-		assert q.get("How would you rate your customer experience?").equals(expected);
+		assertTrue(q.get("test.txt").getQuestion().equals(expected.getQuestion()));
 	}
 
 }
