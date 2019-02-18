@@ -1,6 +1,0 @@
-0001
-0
-Please plug it back in. Did that fix your problem?
-2
-1) yes
-2) no

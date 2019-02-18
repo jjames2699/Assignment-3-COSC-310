@@ -1,6 +1,0 @@
-0001
-0
-Try a hard reset on your phone. Did that work?
-2
-1) yes
-2) no

@@ -1,6 +1,0 @@
-010
-0
-Is the device plugged in all the way?
-2
-1) yes
-2) no

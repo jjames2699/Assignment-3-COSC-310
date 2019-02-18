@@ -1,7 +1,0 @@
-2
-0
-Thank you for using our Chatbot.
-0
-
-
-this ends the program
