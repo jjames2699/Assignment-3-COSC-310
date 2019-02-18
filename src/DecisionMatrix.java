@@ -33,16 +33,6 @@ public class DecisionMatrix {
       }
   }
 
-  public String doesOrDid(String check, String userInput, String[] answers){
-    if(check.contains("Did")||check.contains("Does"))
-    {
-      //if the word says answer 1 point to begin the loop again
-      if(userInput.contains(answers[0].split(" ")[1])) { //if they say yes
-        return "anythingElse-0.txt";
-      }
-    }
-    return null;
-  }
 
 
   public String[] threeOrTwo(int i, String userInput, String[] answers, String[] files_part2, String file){
@@ -95,9 +85,12 @@ public class DecisionMatrix {
     }
 
     int i = Integer.parseInt(s1);
-    decision = doesOrDid(check,userInput,answers);
-    if(!decision.equals(null)){
-      return decision;
+    if(check.contains("Did")||check.contains("Does"))
+    {
+      //if the word says answer 1 point to begin the loop again
+      if(userInput.contains(answers[0].split(" ")[1])) { //if they say yes
+        return "anythingElse-0.txt";
+      }
     }
     if(check.contains("anything else"))
     {
