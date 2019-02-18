@@ -21,7 +21,7 @@ public class QuestionBuilder {
 	 * Description: -	Takes directory name and creates a file named "dir".
 	 * 				-	Initializes ArrayList "builtQuestions" to store all Question objects.
 	 */
-	QuestionBuilder(String folderName) {
+	public QuestionBuilder(String folderName) {
 		this.dir = new File(folderName);
 		this.builtQuestions = new HashMap<>();
 	}
@@ -79,4 +79,5 @@ public class QuestionBuilder {
 			}
 		}
 	}
+	
 }

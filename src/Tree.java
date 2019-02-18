@@ -76,7 +76,8 @@ public class Tree{
 
 	    public static class Node<T> {
 	        private QuestionBuilder qb;
-	        private  HashMap<String, Question> children;
+	        @SuppressWarnings("unused")
+			private  HashMap<String, Question> children;
 
 	        public Node(String folderName) {
 	        	qb = new QuestionBuilder(folderName);
