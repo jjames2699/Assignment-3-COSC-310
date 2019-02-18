@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d6975ad-9851-4a45-b9a5-4409499ab933" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_5_4_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5d6975ad-9851-4a45-b9a5-4409499ab933" name="Default Changelist" comment="Please test">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2019-02-17_8_21_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COSC310_Lab2_G16.iml" beforeDir="false" afterPath="$PROJECT_DIR$/COSC310_Lab2_G16.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UnitTesting/DecisionMatrixTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTesting/DecisionMatrixTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTesting/UserInputTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="C:\Users\randy\git\COSC310_Lab2_G16\.idea\shelf/" />
@@ -17,16 +16,31 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$DecisionMatrixTest_testLetsSplit.ic" NAME="DecisionMatrixTest.testLetsSplit Coverage Results" MODIFIED="1550462608117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$questionBuilderTest.ic" NAME="questionBuilderTest Coverage Results" MODIFIED="1550466189797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>UnitTesting.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$DecisionMatrixTest.ic" NAME="DecisionMatrixTest Coverage Results" MODIFIED="1550462667760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$DecisionMatrixTest.ic" NAME="DecisionMatrixTest Coverage Results" MODIFIED="1550465641516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>UnitTesting.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$DecisionMatrixTest_testDoesOrDid.ic" NAME="DecisionMatrixTest.testDoesOrDid Coverage Results" MODIFIED="1550463565190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$DecisionMatrixTest_testLetsSplit.ic" NAME="DecisionMatrixTest.testLetsSplit Coverage Results" MODIFIED="1550466464207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>UnitTesting.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$questionBuilderTest_buildQuestionsTest.ic" NAME="questionBuilderTest.buildQuestionsTest Coverage Results" MODIFIED="1550466512306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>UnitTesting.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$UserInputTest.ic" NAME="UserInputTest Coverage Results" MODIFIED="1550465930577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>UnitTesting.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$DecisionMatrixTest_testDoesOrDid.ic" NAME="DecisionMatrixTest.testDoesOrDid Coverage Results" MODIFIED="1550466472009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>UnitTesting.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$TreeTest.ic" NAME="TreeTest Coverage Results" MODIFIED="1550465308233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>UnitTesting.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$DecisionMatrixTest_testAnythingElseYes.ic" NAME="DecisionMatrixTest.testAnythingElseYes Coverage Results" MODIFIED="1550462591005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>UnitTesting.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$StackHandlerTest.ic" NAME="StackHandlerTest Coverage Results" MODIFIED="1550465648854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>UnitTesting.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$DecisionMatrixTest_testAnythingElseNo.ic" NAME="DecisionMatrixTest.testAnythingElseNo Coverage Results" MODIFIED="1550463658131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -35,7 +49,7 @@
     <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$DecisionMatrixTest_testThreeOrTwoNo.ic" NAME="DecisionMatrixTest.testThreeOrTwoNo Coverage Results" MODIFIED="1550463640088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>UnitTesting.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$DecisionMatrixTest_testThreeOrTwoYes.ic" NAME="DecisionMatrixTest.testThreeOrTwoYes Coverage Results" MODIFIED="1550463597632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/COSC310_Lab2_G16$DecisionMatrixTest_testThreeOrTwoYes.ic" NAME="DecisionMatrixTest.testThreeOrTwoYes Coverage Results" MODIFIED="1550466456196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>UnitTesting.*</FILTER>
     </SUITE>
   </component>
@@ -45,18 +59,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DecisionMatrix.java">
+        <entry file="file://$PROJECT_DIR$/UnitTesting/TreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+            <state relative-caret-position="123">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UnitTesting/QuestionBuilderTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UnitTesting/DecisionMatrixTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
+            <state relative-caret-position="204">
               <caret line="12" column="125" selection-start-line="12" selection-start-column="125" selection-end-line="12" selection-end-column="125" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -72,6 +101,18 @@
                 <element signature="e#1249#1250#0" expanded="true" />
                 <element signature="e#1285#1286#0" expanded="true" />
                 <element signature="e#1378#1379#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UnitTesting/StackHandlerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,6 +167,9 @@
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/DecisionMatrix.java" />
+        <option value="$PROJECT_DIR$/UnitTesting/TreeTest.java" />
+        <option value="$PROJECT_DIR$/UnitTesting/UserInputTest.java" />
+        <option value="$PROJECT_DIR$/UnitTesting/QuestionBuilderTest.java" />
         <option value="$PROJECT_DIR$/UnitTesting/DecisionMatrixTest.java" />
       </list>
     </option>
@@ -151,6 +195,11 @@
               <item name="COSC310_Lab2_G16" type="b2602c69:ProjectViewProjectNode" />
               <item name="COSC310_Lab2_G16" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="COSC310_Lab2_G16" type="b2602c69:ProjectViewProjectNode" />
+              <item name="COSC310_Lab2_G16" type="462c0819:PsiDirectoryNode" />
+              <item name="Questions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="COSC310_Lab2_G16" type="b2602c69:ProjectViewProjectNode" />
@@ -190,7 +239,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550463656743" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550471501694" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -209,36 +258,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DecisionMatrixTest.testAnythingElseNo">
-    <configuration name="DecisionMatrixTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UnitTesting.DecisionMatrixTest" />
-      <module name="COSC310_Lab2_G16" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UnitTesting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DecisionMatrixTest.testAnythingElseNo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COSC310_Lab2_G16" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UnitTesting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UnitTesting" />
-      <option name="MAIN_CLASS_NAME" value="UnitTesting.DecisionMatrixTest" />
-      <option name="METHOD_NAME" value="testAnythingElseNo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.questionBuilderTest.buildQuestionsTest">
     <configuration name="DecisionMatrixTest.testDoesOrDid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COSC310_Lab2_G16" />
       <extension name="coverage">
@@ -255,7 +275,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DecisionMatrixTest.testThreeOrTwoNo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DecisionMatrixTest.testLetsSplit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COSC310_Lab2_G16" />
       <extension name="coverage">
         <pattern>
@@ -265,7 +285,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="UnitTesting" />
       <option name="MAIN_CLASS_NAME" value="UnitTesting.DecisionMatrixTest" />
-      <option name="METHOD_NAME" value="testThreeOrTwoNo" />
+      <option name="METHOD_NAME" value="testLetsSplit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -287,20 +307,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="questionBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COSC310_Lab2_G16" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UnitTesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UnitTesting" />
+      <option name="MAIN_CLASS_NAME" value="UnitTesting.questionBuilderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="questionBuilderTest.buildQuestionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COSC310_Lab2_G16" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UnitTesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UnitTesting" />
+      <option name="MAIN_CLASS_NAME" value="UnitTesting.questionBuilderTest" />
+      <option name="METHOD_NAME" value="buildQuestionsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="JUnit.questionBuilderTest.buildQuestionsTest" />
+      <item itemvalue="JUnit.questionBuilderTest" />
       <item itemvalue="JUnit.DecisionMatrixTest.testThreeOrTwoYes" />
-      <item itemvalue="Application.DecisionMatrixTest" />
+      <item itemvalue="JUnit.DecisionMatrixTest.testLetsSplit" />
       <item itemvalue="JUnit.DecisionMatrixTest.testDoesOrDid" />
-      <item itemvalue="JUnit.DecisionMatrixTest.testThreeOrTwoNo" />
-      <item itemvalue="JUnit.DecisionMatrixTest.testAnythingElseNo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DecisionMatrixTest.testAnythingElseNo" />
-        <item itemvalue="JUnit.DecisionMatrixTest.testThreeOrTwoNo" />
-        <item itemvalue="JUnit.DecisionMatrixTest.testThreeOrTwoYes" />
+        <item itemvalue="JUnit.questionBuilderTest.buildQuestionsTest" />
         <item itemvalue="JUnit.DecisionMatrixTest.testDoesOrDid" />
-        <item itemvalue="Application.DecisionMatrixTest" />
+        <item itemvalue="JUnit.DecisionMatrixTest.testLetsSplit" />
+        <item itemvalue="JUnit.DecisionMatrixTest.testThreeOrTwoYes" />
+        <item itemvalue="JUnit.questionBuilderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -322,51 +373,57 @@
       <option name="project" value="LOCAL" />
       <updated>1550462147273</updated>
     </task>
-    <task id="LOCAL-00002" summary="checking">
-      <created>1550458994769</created>
+    <task id="LOCAL-00002" summary="Please test">
+      <created>1550463672947</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1550458994769</updated>
+      <updated>1550463672947</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00003" summary="Please test">
+      <created>1550465701524</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550465701524</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DecisionMatrixTest_testAnythingElseYes - 2019.02.17 at 20h 03m 14s.xml">
-      <configuration name="DecisionMatrixTest.testAnythingElseYes" configurationId="JUnit" />
+    <history-entry file="DecisionMatrixTest - 2019.02.17 at 20h 54m 03s.xml">
+      <configuration name="DecisionMatrixTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionMatrixTest_testAnythingElseNo - 2019.02.17 at 20h 03m 21s.xml">
-      <configuration name="DecisionMatrixTest.testAnythingElseNo" configurationId="JUnit" />
+    <history-entry file="StackHandlerTest - 2019.02.17 at 20h 54m 10s.xml">
+      <configuration name="StackHandlerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionMatrixTest_testLetsSplit - 2019.02.17 at 20h 03m 29s.xml">
+    <history-entry file="UserInputTest - 2019.02.17 at 20h 58m 52s.xml">
+      <configuration name="UserInputTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserInputTest_TestUI - 2019.02.17 at 20h 59m 39s.xml">
+      <configuration name="UserInputTest.TestUI" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="questionBuilderTest_buildQuestionsTest - 2019.02.17 at 21h 01m 47s.xml">
+      <configuration name="questionBuilderTest.buildQuestionsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="questionBuilderTest - 2019.02.17 at 21h 03m 11s.xml">
+      <configuration name="questionBuilderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DecisionMatrixTest_testThreeOrTwoYes - 2019.02.17 at 21h 07m 37s.xml">
+      <configuration name="DecisionMatrixTest.testThreeOrTwoYes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DecisionMatrixTest_testLetsSplit - 2019.02.17 at 21h 07m 46s.xml">
       <configuration name="DecisionMatrixTest.testLetsSplit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionMatrixTest_testThreeOrTwoYes - 2019.02.17 at 20h 17m 11s.xml">
-      <configuration name="DecisionMatrixTest.testThreeOrTwoYes" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DecisionMatrixTest_testThreeOrTwoYes - 2019.02.17 at 20h 18m 54s.xml">
-      <configuration name="DecisionMatrixTest.testThreeOrTwoYes" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DecisionMatrixTest_testDoesOrDid - 2019.02.17 at 20h 19m 26s.xml">
+    <history-entry file="DecisionMatrixTest_testDoesOrDid - 2019.02.17 at 21h 07m 53s.xml">
       <configuration name="DecisionMatrixTest.testDoesOrDid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionMatrixTest_testThreeOrTwoYes - 2019.02.17 at 20h 19m 59s.xml">
-      <configuration name="DecisionMatrixTest.testThreeOrTwoYes" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DecisionMatrixTest_testThreeOrTwoNo - 2019.02.17 at 20h 20m 19s.xml">
-      <configuration name="DecisionMatrixTest.testThreeOrTwoNo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DecisionMatrixTest_testThreeOrTwoNo - 2019.02.17 at 20h 20m 41s.xml">
-      <configuration name="DecisionMatrixTest.testThreeOrTwoNo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DecisionMatrixTest_testAnythingElseNo - 2019.02.17 at 20h 20m 59s.xml">
-      <configuration name="DecisionMatrixTest.testAnythingElseNo" configurationId="JUnit" />
+    <history-entry file="questionBuilderTest_buildQuestionsTest - 2019.02.17 at 21h 08m 33s.xml">
+      <configuration name="questionBuilderTest.buildQuestionsTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.18710022" />
       <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" weight="0.18710022" />
@@ -532,16 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTesting/StackHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/QuestionBuilderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -556,26 +603,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTesting/QuestionBuilderTest.java">
+    <entry file="file://$PROJECT_DIR$/UnitTesting/StackHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="680">
+          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTesting/UserInputTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DecisionMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        <state relative-caret-position="449">
+          <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Questions/test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTesting/TreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UnitTesting/DecisionMatrixTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="204">
           <caret line="12" column="125" selection-start-line="12" selection-start-column="125" selection-end-line="12" selection-end-column="125" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -591,6 +663,16 @@
             <element signature="e#1249#1250#0" expanded="true" />
             <element signature="e#1285#1286#0" expanded="true" />
             <element signature="e#1378#1379#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTesting/QuestionBuilderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

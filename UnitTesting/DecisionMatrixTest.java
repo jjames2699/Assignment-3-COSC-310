@@ -11,7 +11,6 @@ public class DecisionMatrixTest {
     DecisionMatrix test = new DecisionMatrix();
     String file = "0-0.txt", user = "yes";
     String[] files_part2 = {"0","0","txt"}, answers = {"1) yes", "2) no"}, ansYes ={"00","0","txt"}, ansNo ={"01","0","txt"};
-
     @Test
     void testLetsSplit() {
         assertArrayEquals(test.letsSplit(file),files_part2);
