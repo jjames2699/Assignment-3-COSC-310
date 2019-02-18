@@ -51,17 +51,5 @@ public class StackHandler {
             writer.println(filePathLog.pop());
         }
         writer.close();
-    }
-    // Test Class
-    public static void main(String[] args) throws IOException {
-        StackHandler sh = new StackHandler();      
-        Stack<String> cons = sh.initConversationLog();
-        Stack<String> path = sh.initFileLog();
-        cons.push("Test Converation Log");
-        cons.push("newline");
-        path.push("001-0.txt");
-        path.push("newline");
-        sh.conToFile();
-        sh.pathToFile();   
     }  
 }
