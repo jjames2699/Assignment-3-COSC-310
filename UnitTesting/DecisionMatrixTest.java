@@ -31,8 +31,4 @@ public class DecisionMatrixTest {
     void testThreeOrTwoNo(){
         assertTrue(Arrays.equals(test.threeOrTwo(2,"no",answers,files_part2,file),ansNo));
     }
-    @Test
-    void testDoesOrDid(){
-        assertTrue("anythingElse-0.txt".equals(test.doesOrDid("Did", user, answers)));
-    }
 }
