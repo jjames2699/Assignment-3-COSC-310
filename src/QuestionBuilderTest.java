@@ -10,10 +10,23 @@ public class QuestionBuilderTest {
 		
 		QuestionBuilder qb = new QuestionBuilder(folderName);
 		qb.buildQuestions();
-		q = qb.getBuiltQuestions();
+		q = new ArrayList<>(qb.getBuiltQuestions().values());
 		
 		q.get(0).printQuestion();
 		q.get(1).printQuestion();
+		
+		EdgeBuilder eb = new EdgeBuilder(q);
+		
+		q = eb.buildEdges();
+		
+		q.get(0).printQuestion();
+		q.get(1).printQuestion();
+		q.get(2).printQuestion();
+		q.get(0).getChild(1).printQuestion();
+		
+		
+		
+		
 
 	}
 

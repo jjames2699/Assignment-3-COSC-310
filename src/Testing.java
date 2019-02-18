@@ -1,33 +1,25 @@
 package src;
 
-import java.util.ArrayList;
-
+import java.io.IOException;
+/*
+ * Class: Testing
+ * Description: -	Test class that executes Chatbot
+ * 				-	Creates instance of Run Class
+ * 				-	while loop allows user to go back to the beginning if they have more than one issue
+ * 				-	Executes initialize method from Run Class
+ * 				-	Executes initializeTree method from Run Class
+ * 				-	Executes runLoop method from Run Class
+ * Authors: Daulton Baird
+ */
 public class Testing {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String user= "";
-		//BotTree bot = new BotTree(0); //This is going to be the initial instance of whatever tree class we make
-		Tree start = new Tree(0);
-		ArrayList<Question> initial = start.getNextQuestion();//
-		initial.get(0).printQuestion();//print the initial question
-		UserInput ui= new UserInput(); //Create instance of User Input class
-		user = ui.getInput();	//Read user input via Scanner in UI class
-		
-		int selection = 0; //select which tree to go to based on user's input
-		if(user.contains("internet")) {selection = 1;} //internet = tree #1
-		else if(user.contains("tv")) {selection = 2;} //tv = tree #2
-		else if(user.contains("phone")) {selection = 3;} //phone = tree #3
-		
-		
-		Tree bot = new Tree(selection); //the tree created from user's input
-		ArrayList<Question> questions = bot.getNextQuestion(); //ArrayList that hold the questions
-		for(int i=0; i<questions.size(); i++) {
-			user = "";
-			questions.get(i).printQuestion(); //get next question
-			user = ui.getInput(); //read user input
-		}	
-		
+	public static void main(String[] args) throws IOException {
+		Run run = new Run();
+		System.out.println("Hello, I am Chatbot. I will be assisting you today.");
+		while(true) {
+		    run.initialize();
+		    run.initializeTree();
+		    run.runLoop();
+		}
 	}
-
 }

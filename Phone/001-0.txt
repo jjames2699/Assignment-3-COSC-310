@@ -1,6 +1,6 @@
-0001
+001
 0
-Please plug it back in. Did that fix your problem?
+Is your Phone still covered under warranty?
 2
 1) yes
 2) no
