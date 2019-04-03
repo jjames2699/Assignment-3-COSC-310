@@ -21,10 +21,15 @@ For this assignment, you will take the output of your group's A2 and continue de
 
 
 10 points each: Use of language toolkits, incorporate feature to improve your conversation's flow:
+
     oSynonym recognition -WordNet (you'll need a Java API to it)
+    
     oPOS tagging -Stanford toolkit, OpenNLP
+    
     oNamed entity recognition -Stanford toolkit, OpenNLP
+    
     oPhrasal -Stanford toolkitoCoreference Resolution -Stanford toolkit, OpenNLP
+    
     oSentiment analysis tools -Stanford toolkit
     
     
