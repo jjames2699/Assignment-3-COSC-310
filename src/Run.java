@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Stack;
 
+import javax.swing.*;
+
 /*
  * Class: Run
  * Description: -	Main class to run the Chatbot
@@ -24,7 +26,7 @@ import java.util.Stack;
  * 				-	questions -> QuestionBuilder -> (Hashmap)
  * 				-	d -> (DecisionMatrix)
  * 	
- * Authors: Daulton Baird
+ * Authors: Daulton Baird, Jarin James
  */
 
 public class Run {
@@ -37,7 +39,7 @@ public class Run {
 		StackHandler sh;
 		Stack<String> convo;
 		Stack<String> fileStack;
-
+		String user1; // to store user response from GUI
 		public Run() {
 			sh = new StackHandler();
 			convo = sh.initConversationLog();
@@ -54,21 +56,38 @@ public class Run {
  * 				-	Assigns UserInput ui to new UserInput
  *  			-	Assigns String user to the user's input
  * 				-	Assigns selection based on the new Tree to be built
- * 				-	If input is invalid print that it is invalid				
+ * 				-	If input is invalid print that it is invalid	
+ *              -   Question displayed in option pane			
  */
 	
 	public void initialize() {
 		Tree start = new Tree(0);
 		ArrayList<Question> initial = new ArrayList<>(start.getNextQuestion().values());
 		setSelection(0);
-		while(true) {
-		initial.get(0).printQuestion();
+		JFrame f; 
+		f=new JFrame();  
+	    JOptionPane.showMessageDialog(f,"Hello, Welcome to chatbot");  
+		while(true) {		
+			user1 = JOptionPane.showInputDialog(f,
+					initial.get(0).getQuestion());
 		convo.push("Chatbot: "+initial.get(0).getQuestion());
 		setUI(new UserInput());
-		setUser(ui.getInput());
+		//setUser(ui.getInput());  
+		setUser(user1);  
 		convo.push("User: "+getUser());
 		if(user.contains("internet")) {setSelection(1); break;}
-		else if(user.contains("phone")) {setSelection(2); break;}
+		else if(user.contains("wifi")) {setSelection(1); break;}
+		if(user.contains("phone")) {setSelection(2); break;}
+		if(user.contains("televison")) {
+			System.out.println("Sorry we can't help with your televison problems just yet, please try again");}
+		if(user.contains("neither")) {
+			System.out.println("Sorry we can only help with internet or phone related problems");}
+		if(user.contains("both")) {
+			System.out.println("Okay, lets try to fix one problem first");}
+		if(user.contains("tablet")) {
+			System.out.println("We don't have specific instructions on how to deal with tablet related problems. You can try using the phone feature to attempt to solve your problem");}
+		if(user.contains("video game")) {
+			System.out.println("We don't have specific instructions on how to deal with video game related problems.");}
 		else {System.out.println("Entry invalid, try again");}
 		}
 	}
@@ -100,7 +119,8 @@ public class Run {
 	 * 				-	If the current file is the end file, print the "Thank you" string and then exit the program
 	 * 				-	Otherwise Print current question
 	 * 				-	Set String user to the user's input
-	 *  			-	Decide the next file via DecisionMatrix d			
+	 *  			-	Decide the next file via DecisionMatrix d
+	 *              -   Question displayed option pane			
 	 */
 	
 	public void runLoop() throws IOException {
@@ -108,15 +128,17 @@ public class Run {
 			if(getFile().equals("loop-0.txt")){
 				break;
 			}else if(getFile().equals("end-0.txt")){
-				getQuestions().get(getFile()).printQuestion();
+				user1 = JOptionPane.showInputDialog(null,
+						getQuestions().get(getFile()).getQuestion());
 				convo.push("Chatbot: "+getQuestions().get(getFile()).getQuestion());
 				sh.conToFile();
 				sh.pathToFile();
 				System.exit(0);
 			}
-			getQuestions().get(getFile()).printQuestion();
+			user1 = JOptionPane.showInputDialog(null,
+					getQuestions().get(getFile()).getQuestion());
 			convo.push("Chatbot: "+getQuestions().get(getFile()).getQuestion());
-			setUser(ui.getInput());
+			setUser(user1);
 			convo.push("User: "+getUser());
 			file = d.Decision(getUser(), getFile(), getSelection());
 			fileStack.push(getFile());

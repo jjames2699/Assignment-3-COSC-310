@@ -2,5 +2,5 @@
 2
 Do you have power?
 2
-1) yes
-2) no
+1) y
+2) n

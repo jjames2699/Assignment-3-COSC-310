@@ -1,0 +1,49 @@
+Chatbot: Thank you for using our Chatbot.
+User: no
+Chatbot: Is there anything else I can help you with?
+User: yes
+Chatbot: Please plug in your ethernet cable. Did that fix the issue?
+User: no
+Chatbot: Is your ethernet cable plugged in?
+User: 5 years old
+Chatbot: How old is your ethernet cable?
+User: 5
+Chatbot: How many hours has this been a problem?
+User: ethernet
+Chatbot: Are you connected to Wifi or Ethernet?
+User: internet
+Chatbot: Is your issue in regards to internet, or phone?
+User: yes
+Chatbot: Please contact your service provider. Is there anything else I can help you with?
+User: no
+Chatbot: Try replacing the batteries in the device. Did that fix the problem?
+User: yes
+Chatbot: Are all of the lights on the base station on?
+User: no
+Chatbot: Please unplug and plug the Base station back in and wait a minute. Did that fix the problem?
+User: no
+Chatbot: Can you put the hand held device into the system now and wait a minute. Did that fix the problem?
+User: wireless
+Chatbot: Is the device you own using a cord or is it wireless?
+User: landline
+Chatbot: Are you using a landline or a cell phone?
+User: phone
+Chatbot: Is your issue in regards to internet, or phone?
+User: yes
+Chatbot: You should bring your phone into a physical store. Is there anything else I can help you with?
+User: no
+Chatbot: Try a hard reset on your phone. Did that work?
+User: no
+Chatbot: Try restarting your phone. Did that work?
+User: phone
+Chatbot: Are you having issues with your phone, computer, or both?
+User: no
+Chatbot: Please try moving closer to your router. Did that solve your problem?
+User: 5
+Chatbot: How many feet away are you from the router?
+User: yes
+Chatbot: Is your router plugged in?
+User: wifi
+Chatbot: Are you connected to Wifi or Ethernet?
+User: internet
+Chatbot: Is your issue in regards to internet, or phone?

@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class UserInput {
 	Scanner input;
-	String user;
+	public String user;
 	/*
 	 * Method: getInput (String)
 	 * Inputs: 		-	None

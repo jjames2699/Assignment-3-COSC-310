@@ -2,5 +2,5 @@
 0
 Try to do a hard reset on your phone and computer. Did that fix the issue?
 2
-1) yes
-2) no
+1) y
+2) n

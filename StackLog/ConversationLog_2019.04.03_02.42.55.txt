@@ -1,0 +1,15 @@
+Chatbot: Thank you for using our Chatbot.
+User: nope
+Chatbot: Is there anything else I can help you with?
+User: nah
+Chatbot: Is there anything else I can help you with?
+User: yea
+Chatbot: Please try moving closer to your router. Did that solve your problem?
+User: 5
+Chatbot: How many feet away are you from the router?
+User: ye
+Chatbot: Is your router plugged in?
+User: wifi
+Chatbot: Are you connected to Wifi or Ethernet?
+User: internet
+Chatbot: Is your issue in regards to internet, or phone?
