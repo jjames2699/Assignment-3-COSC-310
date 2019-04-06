@@ -1,3 +1,6 @@
+Jarin James
+
+
 The purpose of the program we created is to assist users in solving their technology problems. This chatbot is similar to ones you would see on websites such as TELUS where the chatbot leads the user through a series of questions in order to attempt to solve the users tech problems. In order to run the program in eclipse you will need to complete the following steps:
 
     1.	Download and install Eclipse.
